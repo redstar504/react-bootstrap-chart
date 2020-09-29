@@ -1,38 +1,137 @@
-.App {
-  text-align: center;
+body {
+    font-size: 0.75rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h2 {
+    font-size: 1rem;
+    color: #FFF;
+    line-height: 32px;
+    padding: 0 16px;
+    font-weight: bold
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.lead {
+    display: flex;
+    align-self: flex-start;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+h3 {
+    color: #FFF;
+    font-size: 0.75rem;
+    font-weight: bold;
+    min-height: 48px;
+    max-height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.App-link {
-  color: #61dafb;
+h3 + span {
+    color: #000;
+    font-size: 0.625rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.container {
+    padding: 16px 0;
 }
+
+.headings > div:nth-child(1) h2 {
+    background: #757171;
+    text-align: center;
+}
+
+.headings > div:nth-child(2) h2 {
+    background: #5B9BD5;
+}
+
+.graph {
+    text-align: center;
+}
+
+.tri {
+    width: 100%;
+    height: 120px;
+    background: #E2F0D9;
+    /* The points are: centered top, left bottom, right bottom */
+    clip-path: polygon(50% 0, 0 100%, 100% 100%);
+}
+
+.g-col {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
+}
+
+.ho-col {
+    background: #203C93;
+    padding: 0;
+}
+
+.efi-col {
+    background: #3481D2;
+    padding: 0;
+}
+
+.eq-col {
+    height: 80px;
+}
+
+.dis-col {
+    height: 80px;
+}
+
+.eq-col {
+    background: #289926;
+}
+
+.dis-col {
+    background: #5078B3;
+}
+
+[data-index="1"] h3 {
+    background: #757171;
+}
+
+[data-index="1"] .ho-col {
+    height: 100px;
+    flex: 0 0 70%;
+    max-width: 70%;
+}
+
+[data-index="1"] .efi-col {
+    flex: 0 0 30%;
+    max-width: 30%;
+}
+
+[data-index="2"] h3 {
+    background: #70AD47;
+}
+
+[data-index="2"] .ho-col {
+    height: 150px;
+}
+
+[data-index="3"] h3 {
+    background: #548235;
+}
+
+[data-index="3"] .ho-col {
+    height: 200px;
+}
+
+[data-index="4"] h3 {
+    background: #DF6A57;
+}
+
+div[data-index="4"] .ho-col,
+div[data-index="4"] .efi-col {
+    height: 0;
+}
+
+
